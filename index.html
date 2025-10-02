@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穹火突擊 (Skyfire Assault)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="startScreen" class="screen">
+            <h1>選擇你的飛船</h1>
+            <div id="playerSelection">
+                <button class="player-option" data-player-type="default">
+                    <canvas id="playerDefaultPreview" width="60" height="60"></canvas>
+                    <span>預設飛船</span>
+                </button>
+                <button class="player-option" data-player-type="fighter">
+                    <canvas id="playerFighterPreview" width="60" height="60"></canvas>
+                    <span>戰鬥機</span>
+                </button>
+                <button class="player-option" data-player-type="cruiser">
+                    <canvas id="playerCruiserPreview" width="60" height="60"></canvas>
+                    <span>巡洋艦</span>
+                </button>
+            </div>
+            <button id="startGameButton">開始遊戲</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <script src="game.js"></script>
+    </body></html>
